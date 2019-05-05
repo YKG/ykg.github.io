@@ -1,10 +1,11 @@
 ---
-title: How I start this blog
+title: 本站如何创建的
 date: 2019-05-04 16:59:19
 tags:
 ---
 
 - 添加about
+
     ```
     hexo new page about
     ```
