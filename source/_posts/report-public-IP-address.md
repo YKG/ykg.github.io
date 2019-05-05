@@ -71,13 +71,11 @@ const server = http.createServer((req, res) => {
 ```
 
 - 启动
-
 ```bash
 node server.js &
 ```
 
 ### 客户端
-
 ```bash
 ssh nas
 watch -n 30 http://<服务器IP>:21110/set & # 每30s连接一下服务器，让服务器记录对应的公网IP
