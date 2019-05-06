@@ -38,6 +38,8 @@ if (lastIP.ip !== ip) {
 }
 ```
 
+`RecordId`可以通过[DescribeSubDomainRecords][2]获取
 
 
-[1]: https://api.aliyun.com/?spm=a2c4g.11186623.2.25.3c4d2846uWi4cX#/?product=Alidns&api=UpdateDomainRecord&params={%22RegionId%22:%22default%22,%22RecordId%22:%220000%22,%22RR%22:%22nas%22,%22Type%22:%22A%22,%22Value%22:%221.1.1.1%22}&tab=DEMO&lang=NODEJS
+[1]: https://api.aliyun.com/?spm=a2c4g.11186623.2.25.3c4d2846uWi4cX#/?product=Alidns&api=UpdateDomainRecord&params={}&tab=DEMO&lang=NODEJS
+[2]: https://api.aliyun.com/?spm=a2c4g.11186623.2.25.3c4d2846uWi4cX#/?product=Alidns&api=DescribeSubDomainRecords&params={}&tab=DEMO&lang=NODEJS
