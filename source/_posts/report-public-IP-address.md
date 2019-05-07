@@ -78,7 +78,7 @@ node server.js &
 ### 客户端
 ```bash
 ssh nas
-watch -n 30 http://<服务器IP>:21110/set & # 每30s连接一下服务器，让服务器记录对应的公网IP
+watch -n 30 curl http://<服务器IP>:21110/set & # 每30s连接一下服务器，让服务器记录对应的公网IP
 ```
 
 ### 获取内网的公网IP
