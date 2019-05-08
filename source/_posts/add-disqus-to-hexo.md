@@ -15,14 +15,14 @@ tags:
 Disqus 无法加载。如果您是管理员，请参阅故障排除指南
 ```
 
-找到[这篇文章][3]给根目录的url配上`http://`前缀，原先的值只是域名，应用后，总算正常工作了。
+找到[这篇文章][3]给根目录的url配上`http://`前缀(在Disqus官网配置url时也被要求加上协议类型)，原先的值只是域名，应用后，总算正常工作了。
 
 
 ### 问题
 
 为了把修改记录到git，但引发了`submodule`问题，等研究明白再写一篇。
 
-- 错误提示1 ([参考][3])
+- 错误提示1 ([参考][4])
 
 ```
  fatal: Pathspec themes/maupassant is in submodule
@@ -39,4 +39,5 @@ Disqus 无法加载。如果您是管理员，请参阅故障排除指南
 
 [1]: http://www.cylong.com/blog/2017/03/26/hexo-next-disqus/
 [2]: https://www.haomwei.com/technology/maupassant-hexo.html
-[3]: https://stackoverflow.com/questions/24472596/git-fatal-pathspec-is-in-submodule
+[3]: http://huanyouchen.github.io/2018/04/30/unable-to-load-Disqus/
+[4]: https://stackoverflow.com/questions/24472596/git-fatal-pathspec-is-in-submodule
