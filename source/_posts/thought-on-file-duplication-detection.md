@@ -24,5 +24,8 @@ tags:
 
 为了弄这个查了`find`、`cut`、`sed`命令，觉得也可以学习一些人的每天一个Linux命令系列。
 
+#### update 2019-05-16 08:16
+刚刚看到这篇文章，对于重复了如何处理问题，符号连接大约是大家公认的[方案][2]
 
 [1]: https://blog.csdn.net/raptor/article/details/52988909
+[2]: https://www.laojiyou.com/books/ccstlcookbook/content/chapter10/chapter10-8-chinese.html
