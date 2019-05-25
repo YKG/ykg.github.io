@@ -94,7 +94,7 @@ async function main(){
 }
 ```
 
-问题是，在`func1`中`return`之类的都只能回到调用方，只有`throw`才可能印象到控制流，throw当然也行，类似
+问题是，在`func1`中`return`之类的都只能回到调用方，只有`throw`才可能影响到控制流，throw当然也行，类似
 ```JavaScript
 async function main(){
     try {
