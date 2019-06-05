@@ -16,9 +16,15 @@ if [[ ! `command -v gdb >/dev/null 2>&1` ]]; then
 fi
 ```
 
+# 以上是错误的！（2019-06-05 23:02更新）
+上面不对的，竟然交了PR，建立了[新PR][3]去修复这个问题，下面的是正确的
+```shell
+command -v gdb >/dev/null 2>&1 || { echo "skipping sse4.2 check - gdb is required"; exit 0; }
+```
 
 [参考1][1]
 [TiKV PR #4832][2]
 
 [1]: https://stackoverflow.com/questions/592620/how-to-check-if-a-program-exists-from-a-bash-script
 [2]: https://github.com/tikv/tikv/pull/4832
+[3]: https://github.com/tikv/tikv/pull/4840
