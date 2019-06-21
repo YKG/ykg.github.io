@@ -30,7 +30,7 @@ http://myimages-1000000004.picsh.myqcloud.com/sample.jpeg?exif
 
 后来进去数据万象的控制台，看图片的地址是这样的：
 ```
-http://myimages-1000000004.piccd.myqcloud.com/sample.jpeg?exif
+http://myimages-1000000004.piccd.myqcloud.com/sample.jpeg
 ```
 
 这下才明白腾讯官网的哪个例子没说清楚，地区简写是跟在`pic`后面的，一直没明白`picsh`是什么意思，看到`piccd`就明白了。`sh`应该是上海，`cd`对应成都。后来给腾讯云的文档中心对应文档页提了反馈，建议增加两个例子，这样就清楚了，免得浪费更多的人的时间。

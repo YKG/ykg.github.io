@@ -7,6 +7,7 @@ tags: [微信支付]
 MD5算法[参考][1]
 另外可能存在的问题：似乎没有测试中文（utf8编码）
 
+晚上看到社区的[这篇文章][2]，用于实现微信支付的，明天争取也能跑通
 
 ```javascript
 const MD5 = hex_md5 // http://pajhome.org.uk/crypt/md5/md5.html
@@ -69,3 +70,4 @@ function getNonceStr() {
 
 
 [1]: http://pajhome.org.uk/crypt/md5/md5.html
+[2]: https://developers.weixin.qq.com/community/develop/doc/000620ec5acb482103b7bf41d51804

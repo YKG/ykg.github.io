@@ -1,5 +1,5 @@
 ---
-title: Learning TiDB 7
+title: TiDB学习笔记7
 date: 2019-06-10 12:23:16
 tags: [TiDB, TiKV]
 ---

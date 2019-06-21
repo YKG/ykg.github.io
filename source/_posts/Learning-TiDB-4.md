@@ -150,7 +150,7 @@ gdb -batch -ex "disass/r _ZN7rocksdb6crc32c10ExtendImplIXadL_ZNS0_L10Fast_CRC32E
 
 安装gdb
 ```
-sudo yum -y remove gdb
+sudo yum -y install gdb
 ```
 
 scripts/check-sse4_2.sh执行通过，着手创建[PR][4]，再次阅读相关Issue和PR，发现原来已经说了是`gdb`问题。花了点时间整理提交了PR，感觉精力耗尽。
