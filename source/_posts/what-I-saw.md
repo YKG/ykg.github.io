@@ -75,3 +75,13 @@ tags: [清单]
 
 - 学习Rust
 - 尝试微信小程序里使用canvas生成海报，试了最基础图片生成
+
+### 2019-06-23
+
+- 配置maven镜像，163
+- 查了springboot启动时间加速相关的资料
+- docker版mysql的root密码找回
+- alpine linux
+- Tini
+- mysql grant命令
+- jdbcTemplate/MyBatis/Spring Data JPA对比
