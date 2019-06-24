@@ -85,3 +85,17 @@ tags: [清单]
 - Tini
 - mysql grant命令
 - jdbcTemplate/MyBatis/Spring Data JPA对比
+
+### 2019-06-24
+
+- 继续阅读Rust语言中文入门
+- 小程序海报生成服务端实现（[laravel-miniprogram-poster][1], [poster-generater][2]）
+- Headless Chrome, 这就是PhantomJS停止更新的原因
+- Puppeteer, Headless Chrome提供的高级操作库，有赞本月13号发布[一篇文章][3]讲他们正在用这个做
+
+
+
+[1]: https://learnku.com/articles/18418
+[2]: https://blog.janguly.com/poster
+[3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
+
