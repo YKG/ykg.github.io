@@ -93,6 +93,15 @@ tags: [清单]
 - Headless Chrome, 这就是PhantomJS停止更新的原因
 - Puppeteer, Headless Chrome提供的高级操作库，有赞本月13号发布[一篇文章][3]讲他们正在用这个做
 
+### 2019-06-25
+
+- 早上读了两小节Rust语言中文入门
+- 使用Srping JPA，很好，省事
+- 使用crontab重新处理了nas的ddns
+- docker-compose up --build 可以应用新的compose.yml配置，发现原来的mysql数据都还在
+- compose.yml可以配置TZ=Asia/Shanghai来让mysql使用CST时区
+- spring.jpa.properties.hibernate.jdbc.time_zone=Asia/Shanghai
+- 把Entity里面的`Timestamp`换成了`LocalDateTime`，这样看时间可以用CST时间
 
 
 [1]: https://learnku.com/articles/18418
