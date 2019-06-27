@@ -104,6 +104,18 @@ tags: [清单]
 - 把Entity里面的`Timestamp`换成了`LocalDateTime`，这样看时间可以用CST时间
 
 
+### 2019-06-26
+
+- SBC -- Single Borad Computer
+
+### 2019-06-27
+
+- 把docker从入门到实践的gitbook浏览完了
+- 原来bash hisotry存放在`~/.bash_history`中
+- 试用FileBrowser和ownCloud，最后选用ownCloud作为赛图上传前端
+- 发现nas上存在大量redir的僵尸进程，该用nginx进行端口转发（反向代理）
+
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
