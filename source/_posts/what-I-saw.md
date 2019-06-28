@@ -116,7 +116,16 @@ tags: [清单]
 - 发现nas上存在大量redir的僵尸进程，该用nginx进行端口转发（反向代理）
 
 
+### 2019-06-28
+
+- NextCloud和ownCloud的关系
+- [使用NextCloud和COS搭建个人网盘][4]
+- 买了2C4G6M北京3区的腾讯云，1400，3年，淘宝买的。有个2C4G5M的活动，1200，3年，都只有上海节点了。达叔建议上5M的，不多花钱。
+- 测试带宽，speedtest-cli，发现腾讯云的最大下载只有20～30Mbps，上传更低。代理不如用nas的，nas的带宽是100Mbps的。
+- 配置试用Azure VPN Gateway产品，Basic的只有SSTP，IKEv2没得选，选高级的配了IKEv2，通了，但带宽很差，还不如ss直接连接
+
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
-
+[4]: https://www.ccarea.cn/archives/445
