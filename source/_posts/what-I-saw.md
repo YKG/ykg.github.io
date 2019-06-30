@@ -125,6 +125,17 @@ tags: [清单]
 - 配置试用Azure VPN Gateway产品，Basic的只有SSTP，IKEv2没得选，选高级的配了IKEv2，通了，但带宽很差，还不如ss直接连接
 
 
+### 2019-06-29
+
+- 修复tradingview的alert列表获取
+- 发现tv的create-alert失败，修复工作量很大
+
+### 2019-06-30
+
+- 使用puppeteer来进行tv的alert创建，但后来发现可能延迟很高，还有要切换symbol的问题
+- 晚上去tfd，决定重新回到之前的发数据包道路，分析数据包差异，没有做完
+- 将《两月回顾（2019.6）》写了，发了。感觉没啥价值
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
