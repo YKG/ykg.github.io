@@ -136,6 +136,13 @@ tags: [清单]
 - 晚上去tfd，决定重新回到之前的发数据包道路，分析数据包差异，没有做完
 - 将《两月回顾（2019.6）》写了，发了。感觉没啥价值
 
+### 2019-07-01
+
+- 从早上开始到16:20把Tradingview的问题修复了，更新了文档
+- iperf3测试nas和bj服务器的带宽，打算先用nas作为服务器
+- 查找NextCloud docker安装资料
+- 协助CR配置tv bot服务器环境
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
