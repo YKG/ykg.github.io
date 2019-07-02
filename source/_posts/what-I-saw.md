@@ -141,6 +141,7 @@ tags: [清单]
 - 从早上开始到16:20把Tradingview的问题修复了，更新了文档
 - iperf3测试nas和bj服务器的带宽，打算先用nas作为服务器
 - 查找NextCloud docker安装资料
+- 发现ahk的磁盘一直是busy，像是jdb2弄的，还有WAgent什么的，磁盘avio达上千ms，找了很多工具，却不怎么会用
 - 协助CR配置tv bot服务器环境
 
 [1]: https://learnku.com/articles/18418
