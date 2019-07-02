@@ -144,6 +144,13 @@ tags: [清单]
 - 发现ahk的磁盘一直是busy，像是jdb2弄的，还有WAgent什么的，磁盘avio达上千ms，找了很多工具，却不怎么会用
 - 协助CR配置tv bot服务器环境
 
+### 2019-07-02
+
+- 看极客时间上买的课程里的磁盘IO相关部分，尝试了大量命令
+- atop重的avio是误报
+- nextcloud装到bj服务器上了
+
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
