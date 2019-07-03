@@ -150,6 +150,12 @@ tags: [清单]
 - atop重的avio是误报
 - nextcloud装到bj服务器上了
 
+### 2019-07-03
+
+- 新开Azure Korea Central节点
+- 将所有服务器（除了us2）的ssh端口都改成非22
+
+
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
