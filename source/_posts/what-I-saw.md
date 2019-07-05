@@ -166,6 +166,7 @@ tags: [清单]
 - docker exec进入安装tcpdump并使用`-w`参数写入同步目录，得到的pcap文件直接用wireshark打开，免去了从container中复制到本地
 - php-fpm的包不是http的，不知道有什么好的调试工具，尝试打开error_log，未实现
 - 现在的php已经不需要在文件末尾写`?>`了，有点像`#!/bin/bash`只用写个开头标志
+- iptables TEE可以用来镜像流量，但只能在同一个网段中，否则必须配置nexthop
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
