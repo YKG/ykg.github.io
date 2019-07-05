@@ -1,5 +1,5 @@
 ---
-title: 怎样加速Mac OSX上Docker bind mount非常慢的问题
+title: 怎样加速Mac OSX上Docker bind mount
 date: 2019-07-05 19:12:07
 tags: [Docker]
 ---
