@@ -1,5 +1,5 @@
 ---
-title: use Cisco IPSec instead of L2TP
+title: 使用Cisco IPSec取代L2TP
 date: 2019-07-01 10:42:56
 tags: [VPN]
 ---
