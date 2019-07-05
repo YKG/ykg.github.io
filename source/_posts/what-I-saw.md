@@ -155,6 +155,16 @@ tags: [清单]
 - 新开Azure Korea Central节点
 - 将所有服务器（除了us2）的ssh端口都改成非22
 
+### 2019-07-05
+
+- 了解怎么使用docker的volumes，包括named和bind mount
+- bind mount型在Mac上（Docker For Mac）文件同步性能很差，甚至不如我访问远在北京的服务器的速度
+- 看到有很多issue关于上面那个同步问题
+- 据称mutagen比docker-sync对于这个问题处理得好
+- 使用brew安装mutagen时，下载速度极慢，使用`ALL_PROXY=socks5://127.0.0.1:1086 brew ...`命令前缀解决
+- 要调试php-fpm，无法抓包，Mac上没有docker0（官网文档也说了，是创建了一个虚拟机，所以没有）
+- docker exec进入安装tcpdump并使用`-w`参数写入同步目录，得到的pcap文件直接用wireshark打开，免去了从container中复制到本地
+- php-fpm的包不是http的，不知道有什么好的调试工具，尝试打开error_log，未实现
 
 
 [1]: https://learnku.com/articles/18418
