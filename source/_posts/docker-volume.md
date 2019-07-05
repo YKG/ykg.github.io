@@ -64,6 +64,15 @@ services:
     volumes: *local-dir
 ```
 
+几个命令
+
+```bash
+docker-compose up --force-recreate # 重新创建contianer
+
+docker-compose down -v # Stops containers and removes containers, networks, volumes, and images created by up
+                       # -v Remove named volumes declared in the `volumes` section
+```
+
 在mac下这个bind mount目前还不行，太慢了，github上这个slow的issue一直在open。当前解决方案是避免使用bind mount，只使用named volume，volume速度和那后，可以使用mutagen来创建一个session同步两个目录
 
 
