@@ -1,5 +1,5 @@
 ---
-title: how Desktop for Mac works
+title: Desktop for Mac是怎样工作的
 date: 2019-07-03 20:12:17
 tags:
 ---
