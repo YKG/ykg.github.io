@@ -168,7 +168,16 @@ tags: [清单]
 - 现在的php已经不需要在文件末尾写`?>`了，有点像`#!/bin/bash`只用写个开头标志
 - iptables TEE可以用来镜像流量，但只能在同一个网段中，否则必须配置nexthop
 
+### 2019-07-06
+
+- 配置Docker + php + xdebug + PhpStorm远程调试环境，但似乎有问题，遂放弃docker，该用vagrant
+- 看vagrant使用说明，原来就是vm headless，效率还是很高的
+- vagrant + php + xdebug + PhpStorm远程调试OK
+- SearX、[CYBER WEAPONS LAB VIDEOS][5]
+
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
 [4]: https://www.ccarea.cn/archives/445
+[5]: https://kodyk.myportfolio.com/content-learn-to-hack
