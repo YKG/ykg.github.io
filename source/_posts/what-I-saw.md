@@ -175,6 +175,12 @@ tags: [清单]
 - vagrant + php + xdebug + PhpStorm远程调试OK
 - SearX、[CYBER WEAPONS LAB VIDEOS][5]
 
+### 2019-07-07
+
+- 尝试创建自己的vagrant box，也能用，但是先遇到了ssh问题，后来又遇到无法共享`/vagrant`问题
+- 把nextcloud的linux开发环境搭建了，但并不怎么顺手，隔着一个vm，创建app不知道如何调试
+- 反思是否应该继续走nextcloud道路，因为浪费了太多时间了
+- 决定明天继续走全部自己来的道路，最主要的工作其实只是要将db独立出来，另外要支持事务
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
