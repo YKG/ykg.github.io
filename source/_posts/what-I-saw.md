@@ -181,6 +181,12 @@ tags: [清单]
 - 把nextcloud的linux开发环境搭建了，但并不怎么顺手，隔着一个vm，创建app不知道如何调试
 - 反思是否应该继续走nextcloud道路，因为浪费了太多时间了
 - 决定明天继续走全部自己来的道路，最主要的工作其实只是要将db独立出来，另外要支持事务
+- 看到PingCAP的新一期培训计划，线上部分原来是要发邮件提交作业，网页也没写，看zhihu的文章才知道
+
+### 2019-07-08
+
+- 今天放弃nextcloud，开始继续Java+MySQL搭建API
+- 晚上导出了微信小程序的DB，清理了loginUser和user表，还没有导入新数据库
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
