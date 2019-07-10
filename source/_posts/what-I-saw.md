@@ -188,6 +188,23 @@ tags: [清单]
 - 今天放弃nextcloud，开始继续Java+MySQL搭建API
 - 晚上导出了微信小程序的DB，清理了loginUser和user表，还没有导入新数据库
 
+### 2019-07-09
+
+- 将user表建立了，photo表还在进行中，完成了一边
+- 下午去相城区搬了行李
+- 搬家费用比我想象的便宜的多，几乎和打车费用一样，搬运费也很低
+- 搬家的司机师傅是霍邱人
+- 照司机师傅估计，那边的民房大概是三四百一个月
+- 晚上选、买各种东西
+
+### 2019-07-10
+
+- 一早继续买买买
+- 一天下了很多单
+- 把旧的床单被套寄回家了，让妈帮忙处理
+- 新买的三件套到了，晾干肯定来不及，花4块钱烘干20分钟，居然可以干，只有枕套有些地方没干，但晚上不用
+
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
