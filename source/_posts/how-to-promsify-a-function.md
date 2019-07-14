@@ -1,5 +1,5 @@
 ---
-title: how to promsify a function
+title: 这样将一个函数变成Promise风格
 date: 2019-07-14 08:20:34
 tags: [JavaScript]
 ---
