@@ -66,3 +66,35 @@ if (res.ok) {
     //...
 }
 ```
+
+### Update
+
+原来可以这么写：
+
+```javascript
+async function foo() {
+    return await rp('http://googe.com').then(() => {ok: true}).catch(() => {ok: false})
+}
+```
+
+之前以为只能这样：
+
+```javascript
+async function foo() {
+    const result = {}
+
+    function errorHandler(err) {
+      result.ok = false
+      result.data = err
+    }
+
+    const res = await rq('http://googe.com').catch(errorHandler)
+
+    if (res) {
+      result.ok = true
+      result.data = res
+    }
+    return result
+}
+```
+
