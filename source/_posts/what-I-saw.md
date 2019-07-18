@@ -224,6 +224,28 @@ tags: [清单]
 - sshd_config GatewayPorts
 - 如何用Java返回没有对应class的JSON结果: Map<String, Object>
 
+### 2019-07-15
+
+- Java JPA分页
+
+### 2019-07-16
+
+- 买了4本书：《枪炮、病菌与钢铁》、《议事规则》、《可操作的民主》、《金字塔原理》
+- 上面的书都是李自然上次推荐的
+
+### 2019-07-17
+
+- wx.stopPullDownRefresh可以结束刷新动画
+- app.json中的backgroundTextStyle、navigationBarTextStyle用来调整动画可见
+- JPA中无法使用的sql注解无法使用isnull()
+
+### 2019-07-18
+
+- coscmd
+- 40块钱买的联想键盘到了，感觉不错
+- mac可以绑定键盘按键，可以绑定ctrl为command，但是fn没法绑定ctrl，然后ctrl在iterm2上没法输入。。
+- wx.reLaunch可以解决wx.switchTab无法传参数的问题
+
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
