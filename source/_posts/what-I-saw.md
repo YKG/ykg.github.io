@@ -246,6 +246,16 @@ tags: [清单]
 - mac可以绑定键盘按键，可以绑定ctrl为command，但是fn没法绑定ctrl，然后ctrl在iterm2上没法输入。。
 - wx.reLaunch可以解决wx.switchTab无法传参数的问题
 
+### 2019-07-24
+
+- WireGuard
+- StreisandEffect/streisand GitHub (VPN)
+- trailofbits/algo GitHub (VPN)
+- Vagrant Multi Machine
+- 买了Dell U2518D显示器，机器1380，运费63，显示器一个USB坏了
+- MySQL Replication
+- iptables
+
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
