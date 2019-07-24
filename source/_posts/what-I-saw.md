@@ -256,6 +256,8 @@ tags: [清单]
 - MySQL Replication
 - iptables
 - 补了前面一周的笔记10+篇。。
+- nc
+- tc命令可以进行流量控制，比如限速
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
