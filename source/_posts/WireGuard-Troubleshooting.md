@@ -1,5 +1,5 @@
 ---
-title: WireGuard-Troubleshooting
+title: WireGuard使用时遇到的问题
 date: 2019-07-24 10:49:43
 tags: [WireGuard, Windows]
 ---

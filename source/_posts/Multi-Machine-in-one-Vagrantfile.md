@@ -1,5 +1,5 @@
 ---
-title: Multi-Machine in one Vagrantfile
+title: 多台机器组成局域网的Vagrantfile
 date: 2019-07-24 09:06:51
 tags: [Vagrant]
 ---
