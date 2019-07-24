@@ -255,6 +255,7 @@ tags: [清单]
 - 买了Dell U2518D显示器，机器1380，运费63，显示器一个USB坏了
 - MySQL Replication
 - iptables
+- 补了前面一周的笔记10+篇。。
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
