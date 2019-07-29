@@ -8,6 +8,8 @@ tags: [NodeJS]
 
 ```javascript
 // 从 coscmd info <fileId> 命令的结果中抽取 Last-Modified 时间
+const { spawn } = require('child_process');
+
 const info = spawn('coscmd', ['info', cosId]);
 info.stdout.on('data', (data) => {
     data = data.toString();
