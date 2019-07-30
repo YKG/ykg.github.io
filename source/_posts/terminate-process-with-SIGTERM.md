@@ -1,5 +1,5 @@
 ---
-title: terminate process with SIGTERM
+title: 使用SIGTERM信号让程序正常终止
 date: 2019-07-30 21:07:06
 tags: [Linux]
 ---
