@@ -282,6 +282,14 @@ tags: [清单]
 
 - 继续支持赛事成绩
 - geoip, ip2region
+- 微信和它上面的小程序等没法进行gps持续记录
+
+### 2019-07-30
+
+- 将赛图换过数据库之后的版本上线了
+- 要做数据库主备，做了一半，明天完成
+- 中科凤麟招聘
+- MS招聘，Intune
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
