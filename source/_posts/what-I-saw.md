@@ -291,6 +291,12 @@ tags: [清单]
 - 中科凤麟招聘
 - MS招聘，Intune
 
+### 2019-08-01
+
+- 买了性能之巅
+- 早上浏览了极客时间上面买的Linux性能分析的CPU部分
+- 数据库复制做好了，虽然费了不少时间。还是用docker好，不浪费时间
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
