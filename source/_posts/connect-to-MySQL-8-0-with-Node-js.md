@@ -1,5 +1,5 @@
 ---
-title: connect to MySQL 8.0 with Node.js
+title: Node.js连接MySQL 8.0 
 date: 2019-08-02 18:35:28
 tags: [MySQL]
 ---
