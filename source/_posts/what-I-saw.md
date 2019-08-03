@@ -309,6 +309,11 @@ tags: [清单]
 - 买了4号去固始的车票
 - 构思了下怎么web上传赛图图片，接入微信登录太麻烦，想自己生成二维码自己做同步
 
+### 2019-08-03
+
+- 回固始火车票退订
+- 做《Linux性能优化实战》上的实验
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
