@@ -314,6 +314,11 @@ tags: [清单]
 - 回固始火车票退订
 - 做《Linux性能优化实战》上的实验
 
+### 2019-08-04
+
+- eBPF，原以为是只跟网络相关，原来现在已经进内核了，相当于内核虚拟机，用来做监控的
+- Promethus是监控工具，GRAFANA用来画dashboard的
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
