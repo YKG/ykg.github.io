@@ -329,7 +329,9 @@ tags: [清单]
 ### 2019-08-06
 
 - smem, bcc tools, memleak, cachetop
-
+- bcc tutorial
+- ZFS, OpenZFS, illumos, DTrace
+- iostat, iotop
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
