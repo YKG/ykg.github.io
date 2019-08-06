@@ -319,6 +319,13 @@ tags: [清单]
 - eBPF，原以为是只跟网络相关，原来现在已经进内核了，相当于内核虚拟机，用来做监控的
 - Promethus是监控工具，GRAFANA用来画dashboard的
 - 不安之书,佩索阿 梁文道《一千零一夜》
+- 打算做一个google镜像，自己用，看到了wen.lu做的这个功能的一个nginx模块ngx_http_google_filter_module
+
+### 2019-08-05
+
+- 早上出发回家
+- 12306开始支持购买同一车次不同区间拼接了
+
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
