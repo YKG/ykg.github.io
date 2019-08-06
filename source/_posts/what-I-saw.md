@@ -326,6 +326,10 @@ tags: [清单]
 - 早上出发回家
 - 12306开始支持购买同一车次不同区间拼接了
 
+### 2019-08-06
+
+- smem, bcc tools, memleak, cachetop
+
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
