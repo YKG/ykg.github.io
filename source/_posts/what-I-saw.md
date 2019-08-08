@@ -333,6 +333,18 @@ tags: [清单]
 - ZFS, OpenZFS, illumos, DTrace
 - iostat, iotop
 
+### 2019-08-07
+
+- 修改文件修改时间、创建时间
+- What Every Programmer Should Know About Memory
+- 晚上写第二版赛图Web上传
+
+### 2019-08-08
+
+- 昨夜不知道为何express-fileupload的mv函数有问题，移动后的文件比原文件小，而且还是随机大小，弄了好久不知道为什么，换成multer，nodejs库质量还是差，考虑是不是要python了
+- 清除Mac的dns缓存
+- iframe包装其他页面
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
