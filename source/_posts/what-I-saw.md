@@ -344,6 +344,8 @@ tags: [清单]
 - 昨夜不知道为何express-fileupload的mv函数有问题，移动后的文件比原文件小，而且还是随机大小，弄了好久不知道为什么，换成multer，nodejs库质量还是差，考虑是不是要python了
 - 清除Mac的dns缓存
 - iframe包装其他页面
+- input的type里面有number类型，这样可以规避一些输入内容合法性检查
+- Node.js的Crypto进行hash
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster

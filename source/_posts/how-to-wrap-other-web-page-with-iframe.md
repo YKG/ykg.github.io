@@ -1,7 +1,7 @@
 ---
 title: 怎样使用iframe套用其他网页
 date: 2019-08-08 17:03:29
-tags: [iframe]
+tags: [HTML]
 ---
 
 ```html
