@@ -353,6 +353,7 @@ tags: [清单]
 - java历史
 - jenkins
 - rust clap cli处理
+- 昨天和今天几个月之前的pingcap的docs的PR给通过了
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
