@@ -347,6 +347,13 @@ tags: [清单]
 - input的type里面有number类型，这样可以规避一些输入内容合法性检查
 - Node.js的Crypto进行hash
 
+### 2019-08-09
+
+- jshell
+- java历史
+- jenkins
+- rust clap cli处理
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
