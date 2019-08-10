@@ -355,6 +355,11 @@ tags: [清单]
 - rust clap cli处理
 - 昨天和今天几个月之前的pingcap的docs的PR给通过了
 
+### 2019-08-10
+
+- 给姥爷上坟
+- 晚上胡总发来发票查验ui原型，随即开始做了两个静态页面
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
