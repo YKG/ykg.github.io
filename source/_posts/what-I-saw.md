@@ -360,6 +360,26 @@ tags: [清单]
 - 给姥爷上坟
 - 晚上胡总发来发票查验ui原型，随即开始做了两个静态页面
 
+### 2019-08-11
+
+- 为发票查验添加过滤效果
+
+### 2019-08-12
+
+- 回苏州
+
+### 2019-08-13
+
+- /tmp目录并不一定是存储在内存中的，也可能是磁盘设备
+- 红米Note7 Pro收到，很流畅
+- 约YMM吃晚饭，没约成
+
+### 2019-08-14
+
+- 给6个之前招聘远程岗位做程序贡献分析的公司准备简历
+
+
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
