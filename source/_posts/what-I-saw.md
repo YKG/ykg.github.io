@@ -399,6 +399,9 @@ tags: [清单]
 - 看了马前卒的所有《睡前消息》
 - 继续pingcap的事情，做了project1的前两个part
 
+### 2019-08-19
+
+- 继续pingcap的project, 1完成，2开始
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
