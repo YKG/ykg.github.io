@@ -14,5 +14,7 @@ tags:
 
 月利率0.75分1期的Excel公式参考：`=0.75*24*A5/(1+A5)`
 
+参考2: [信用卡分期实际年化利率计算器][2] 
 
 [1]: https://zhuanlan.zhihu.com/p/37963544
+[2]: https://www.kuaiyilicai.com/bank/fees/ccinstallmentrate.html
