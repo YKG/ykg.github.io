@@ -548,10 +548,87 @@ tags: [清单]
 - 查了下软件保护方面的维基百科
 - 看了《他乡的童年》前3集
 
+### 2019-09-16
+
+- 把发票查验的配置页面ui逻辑晚上了下，可以存储配置信息了
+- iData每天可以下载5篇论文
+- 发现被ddos了超过24小时，170+G流量，停机，换了ip
+
+### 2019-09-17
+
+- 深圳方面无消息
+- azure的服务器都不能访问ss服务了，只有tw尚可，wireguard还可以用
+- 读了byvoid的《Google工作这四年》
+
+### 2019-09-18
+
+- 发票查验做了一些修修补补
+- 看加密通信相关的东西，aes原来是对称加密，想借鉴wireguard的加密方法，看它的白皮书里说是拿Curve25519做认证的，数据加密（看重速度）用的ChaCha20Poly1305
+- Curve25519查了下算是当前最高等级的加密方法了
+- 看wg的白皮书
+
+### 2019-09-19
+
+- 看密码学相关的东西
+- 看《爱，死亡和机器人》
+
+### 2019-09-20
+
+- 去独墅湖图书馆借了3本书，2本密码学相关，1本2019前沿科技动态
+- 看《爱，死亡和机器人》
+- 试用了下webpack
+- 使用百度脑图整理知识库
+
+### 2019-09-21
+
+- 刷抖音知道了伞兵15勇士先遣队，进而一直在刷汶川相关的东西
+
+### 2019-09-22
+
+- Prometheus + Grafana + Node Exporter和两个可以使用node exporter数据的dashboard配置好了
+- 装了了Prometheus lua nginx的exporter，但没有配合的dashboard，费了好大劲，差不多白弄了
+- 看了《武状元苏乞儿》
+
+### 2019-09-23
+
+- 调研日志分析工具，发现没有适合单机的工具，还是继续使用datadog吧
+- 因为nginx的nginx_status也被日志收录进去了（nginx amplify也要使用，datadog agent似乎也要用，每隔20s一次访问），使用access_log off指令关闭了这个url的访问日志
+- 为了对抗网站扫描，希望访问那些php的和刷.git目录的能够保持静默，什么也不返回。使用return 444服务端主动关闭，但觉得还不够，想发RST，后来查到SO_LINGER参数，进而了解到reset_timedout_connection指令，但指令在1.15.2版本才加入，服务器上的版本还是1.14，升级了nginx，然后加了这个指令，符合预期，这是wireshark抓来，貌似没有RST报文，服务器没有再发响应报文
+- 定制datadog的日志格式，grok
+- 看《走近科学》到深夜
+- 下午从2点睡到5点
+
+### 2019-09-24
+
+- logrotate
+- nginx USR1
+- 在datadog上把日志弄好了。logrotate的postrotate脚本使用setfacl给access.log加上dd-agent访问权限
+- 关闭所有停止的azure服务器，把sgp机器升级的8g内存，为了使用elk，监控nginx日志
+- 装了太多agent，把端口都封了，停了agent，都使用elk，用的elk docker，没弄通bj到sgp的log
+- 看了taobao各种虚拟机
 
 
+### 2019-09-25
 
+- 发现qcloud现在有企业新用户的优惠，2c8g5m的机器1790，想买
+- 知道了aws lightsnail，aws淘宝可以买$150代金券（实际是学生优惠，网上有神奇方法）
+- 胡老板发来截图，告知对方还价210w，我觉得不好，说还是走服务模式，闭源，他说不要。和导演说，我说还要和销售分，导演说销售分30%，如果谈下来建议新开个公司弄
+- 停了elk docker，按照官方的方法做，发现原来logstash是非必须的，简单的情况beats就可以完成功能了，估计es也逐渐在让logstash变成optional的
+- ps lstart
+- namei -m
+- sudo timedatectl set-timezone Asia/Shanghai
+- elasticsearch -d deamon模式
+- 不知道怎么给nginx log的dashboard加展示字段，es的文档还是欠缺和简陋
+- nohup &, SIGHUP, screen/tmux，后台运行程序的方法（因为之前java跑的es和kibana都停了，虽然用的&，基础东西都熟啊）
 
+### 2019-09-26
+
+- 为了知道怎么结合使用ingest和filebeat，找了很多资料，但都不好。[这一篇文章][6]不错，最后终于把nginx access log的$host字段提取出来了，后来使用kibana的dashboard api增加了access log的展示列
+- filebeat和ingest、es的大致关系有点了解了
+- 瀚阑那边说下月中要弄图片直播，估计时间很紧（即使只有这个）
+- 下午任总来电了解情况，了解开票的事情（查验得抓紧出一个完成版了，开票不知有没有时间弄）
+- 右手胳膊都痉挛了，天天时间都在用电脑键盘
+- 取了《代码虚拟与自动化分析》
 
 
 [1]: https://learnku.com/articles/18418
@@ -559,3 +636,4 @@ tags: [清单]
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
 [4]: https://www.ccarea.cn/archives/445
 [5]: https://kodyk.myportfolio.com/content-learn-to-hack
+[6]: https://gryzli.info/2019/04/21/working-with-ingest-pipelines-in-elasticsearch-and-filebeat/
