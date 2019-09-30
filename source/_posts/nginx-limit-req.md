@@ -19,3 +19,10 @@ map $limit $limit_key {
 
 limit_req_zone $limit_key zone=perip:10m rate=5r/s;
 ```
+
+
+```
+
+failregex = (?i)^<HOST> -.*(GET|POST|HEAD).*(\.php|\.asp|\.exe|\.pl|\.cgi|\.scgi|\.exp)
+
+```

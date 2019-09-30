@@ -21,7 +21,7 @@ tags: [nginx, 安全]
     http {
         limit_req_zone $binary_remote_addr zone=perip:10m rate=5r/s;
         limit_req_zone $server_name zone=perserver:10m rate=50r/s;
-        limit_req zone=perip burst=8 nodelay;
+        limit_req zone=perip burst=5 nodelay;
         limit_req zone=perserver burst=50 nodelay;
         limit_req_status 444;
 
