@@ -634,6 +634,23 @@ tags: [清单]
 
 - 一整天在给nginx加入流控和防御请求类似`*.php`的请求，用fail2ban给封了
 - 和胡了解下谈判进展，后来问及怎么分钱的事情，推说以后再谈，我要求先说明，告知平分方案，我提议30-70方案，他还让我考虑，双方都不考虑对方方案。往后我也不打算接受调和方案，甚至过了今天打算只接受15-85方案。
+- 浏览了下这个文章[Building a Security Shield for Your Applications with NGINX & Wallarm][7]
+- 晚上把system log和几个metrics都上了
+
+### 2019-09-28
+
+- start-stop-daemon
+- nginx的directive是次序敏感的
+
+### 2019-09-29
+
+- ssllabs给了网站A+评分
+- Emacs退出命令Ctrl+X Ctrl+C
+- 限制metricbeat上传数据量（数据量太大了，只上传固定几个process的metrics）[参考][8]
+
+### 2019-09-30
+
+- 这两天没在工作的时间还是为分成的事情烦扰，昨天胡发来一长段消息，最后还有敲诈性质，不打算回复。倒是感受了下别人给自己发长微信，结论：永远不给任何人发长微信。
 
 
 [1]: https://learnku.com/articles/18418
@@ -642,3 +659,6 @@ tags: [清单]
 [4]: https://www.ccarea.cn/archives/445
 [5]: https://kodyk.myportfolio.com/content-learn-to-hack
 [6]: https://gryzli.info/2019/04/21/working-with-ingest-pipelines-in-elasticsearch-and-filebeat/
+[7]: https://www.nginx.com/blog/build-application-security-shield-with-nginx-wallarm/
+[8]: https://discuss.elastic.co/t/storage-estimate-for-metricbeat/81878
+
