@@ -651,6 +651,41 @@ tags: [清单]
 ### 2019-09-30
 
 - 这两天没在工作的时间还是为分成的事情烦扰，昨天胡发来一长段消息，最后还有敲诈性质，不打算回复。倒是感受了下别人给自己发长微信，结论：永远不给任何人发长微信。
+- iptables drop/reject icmp not reachable [link][http://www.chiark.greenend.org.uk/~peterb/network/drop-vs-reject]
+- pwnat
+- nps
+- hping3/nping(nmap)
+- 菌草
+- pystun [https://doc-kurento.readthedocs.io/en/6.9.0/knowledge/nat.html#types-of-nat-in-the-real-world]
+- 使用hping3直接发包做了会儿实验
+
+### 2019-10-01
+
+- 做赛图的海报分享
+- scade调研
+
+### 2019-10-02
+
+- scade
+- dsvpn
+
+### 2019-10-03
+
+- dsvpn
+- 弄赛图前端
+- 赛图上传迁移到bj服务器
+
+### 2019-10-04
+
+- 美化相册列表完成
+- 微信审核不通过，要求提交icp备案材料和进行敏感内容检查
+- 夜里发现图库第一张图是习大大的照片，对比时间，上传时间16:52，不通过通知是16:54下发的，猜测是微信的审核人员测试上传的
+
+### 2019-10-05
+
+- 加入了上传图片敏感内容检查
+- 批量上传web入口加入敏感内容检查
+- 赛图评论部分加入敏感内容检查
 
 
 [1]: https://learnku.com/articles/18418
