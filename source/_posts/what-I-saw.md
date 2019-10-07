@@ -693,6 +693,10 @@ tags: [清单]
 - 赛图再次审核不通过，原因iOS禁止虚拟物品售卖
 - 夜里以为明白了wg的配置，想把完全vpn实现了，结果证明想法没有被验证。但顺势尝试了下iptables，调试几条后，通了，很高兴
 
+### 2019-10-07
+
+- conntrack，这个是nat的关键
+
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
 [3]: https://developers.weixin.qq.com/community/develop/article/doc/00022cd6eb09a8933bb8b8f3d56013
