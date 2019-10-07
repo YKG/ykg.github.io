@@ -687,6 +687,11 @@ tags: [清单]
 - 批量上传web入口加入敏感内容检查
 - 赛图评论部分加入敏感内容检查
 
+### 2019-10-06
+
+- 试用jsproxy（Cloudflare Workers）成功，但看项目主页，因为网址是固定的，说有Cookie风险，建议在隐身模式浏览。网页速度飞快，youtube尚可，但不及dsvpn
+- 赛图再次审核不通过，原因iOS禁止虚拟物品售卖
+- 夜里以为明白了wg的配置，想把完全vpn实现了，结果证明想法没有被验证。但顺势尝试了下iptables，调试几条后，通了，很高兴
 
 [1]: https://learnku.com/articles/18418
 [2]: https://blog.janguly.com/poster
