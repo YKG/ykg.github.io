@@ -1,5 +1,5 @@
 git add .
-git commit -m "updatet"
+git commit -m "update"
 git push 
 hexo g -d
 
