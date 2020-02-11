@@ -11,8 +11,6 @@ tags: [proxy, 效率, git, Windows]
 
 ### 结论
 
-对于使用
-
 - 参考：[Stack Overflow: SSH in git behind proxy on windows 7][1]
 - 在 `~/.ssh/config` 中添加：
 
