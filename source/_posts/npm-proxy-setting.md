@@ -27,5 +27,3 @@ npm config set registry https://registry.npmjs.org/
 改了之后确实有效
 
 [1]: https://stackoverflow.com/questions/51524828/how-do-i-solve-the-npm-418-im-a-teapot-error-when-trying-to-use-npm-install
-
-Error: Could not fork child process: There are no available terminals (-1).
