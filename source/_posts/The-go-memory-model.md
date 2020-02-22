@@ -43,4 +43,33 @@ tags: [Go]
 这一节的意思是说，从一个goroutine来看，另一个goroutine中的执行过程并不保证和书写的次序一致，它里面的赋值语句之类的可能受到重排序影响，不应该在没有显示同步的情况下，对另一个goroutine的有任何期待
 		
 
+#### 问题（2020-02-22 11:54补充）
+
+6.824对对GMM这篇文档留了个问题，问怎么处理
+
+```go
+var a string
+var done bool
+
+func setup() {
+	a = "hello, world"
+	done = true
+}
+
+func main() {
+	go setup()
+	for !done {
+	}
+	print(a)
+}
+```
+
+使得其是正确的。
+
+想了下
+
+- 可以使用`Once.Do(setup)`，这样`done`和`for`循环都不需要了，因为Once语句只会在setup执行返回之后才可能返回，可视为Once会先block在这里，知道setup完成，自带同步效果
+- 用channel，在setup中a赋值之后即可插入一个对channel的send（close也可以），在print语句之前加入一个receive即可，done和for都不需要有了
+- 用Lock/Unlock原语，如Lock一节的例子，因为Lock的编号次序是有保证的
+
 [1]: https://golang.org/ref/mem
