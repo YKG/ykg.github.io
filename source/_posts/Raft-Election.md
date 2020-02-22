@@ -1,7 +1,7 @@
 ---
 title: Raft选举
 date: 2020-02-22 17:57:58
-tags: [Raft]
+tags: [Raft, 分布式]
 ---
 
 
