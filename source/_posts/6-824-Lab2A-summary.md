@@ -14,7 +14,7 @@ Lab2A实验比我预想花的时间要长，论文那一小段也反反复复扣
 
 #### 发现自己的Bug
 
-开始测试时，全部PASS之后以为自己的没问题。后来又有测试结果是FAIL了，说检测到2个leader，开log检查，定位到voteFor不符合预期，具体错误是：当收到新的RequestVote时，如果请求的term值比当前的高，那么接收方要切换成follower状态，并将响应的VoteGranted置为true。问题出在我将VoteGranted置为true，但我没有将raft节点的VoteFor更新为发起请求节点，导致VoteFor仍保持最初的`-1`（papaer中的null），如果收到term相同的其他节点发来的RequestVote，这个刚才投过票的节点会再次把票投给这个后发请求的节点，从而造成同term两个leader的情况。
+开始测试时，全部PASS之后以为自己的没问题。后来又有测试结果是FAIL了，说检测到2个leader，开log检查，定位到voteFor不符合预期，具体错误是：当收到新的RequestVote时，如果请求的term值比当前的高，那么接收方要切换成follower状态，并将响应的VoteGranted置为true。问题出在我将VoteGranted置为true，但我没有将raft节点的VoteFor更新为发起请求节点，导致VoteFor仍保持最初的`-1`（paper中的null），如果收到term相同的其他节点发来的RequestVote，这个刚才投过票的节点会再次把票投给这个后发请求的节点，从而造成同term两个leader的情况。
 
 换种角度来说，就是一个在当期投过票的人，投完之后没记住，当期又有其他候选人跟他要票，他以为自己没投过（因为没记），所以又投出第二张票，导致他一个人投了两个候选人，两个候选人最后都因此成为了leader。
 
