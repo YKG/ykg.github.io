@@ -1,0 +1,45 @@
+---
+title: Raft log replication
+date: 2020-02-26 18:18:19
+tags: [Raft, 翻译]
+---
+
+一个leader被选出来之后立即开始接受客户端请求
+
+每一个客户端请求包含一个等待被执行的命令
+
+leader将命令作为一个新entry追加到自己的日志中，然后并行分发AppendEntries RPC给其他机器
+
+如果entry被安全的复制了，leader就这个entry应用到自己的状态机上，然后将执行结果返回给客户端
+
+如果follower宕机或者运行缓慢或者出现丢包，leader会无限重试AppendEntries直到所有follower最终存储了所有log entries
+
+每一个log entry存储状态机命令的同时，也记录了这一条entry被leader接收的当期term值。
+这个term号是用来检测logs之间的是否一致。
+entry有一个索引，索引指明它在整个log中的位置。
+
+什么时候将一个log entry应用到状态机上是由leader决定的，应用后的entry算commited
+
+Raft保证所有已提交的entry持久化（durable）并最终会被所有可用的状态机执行
+
+当一个leader把一个log entry复制到大多数机器后，这条entry就被提交。这个操作也顺带提交了这个entry之前的entries，包括由其它leader创建的entry
+
+leader会保持跟新他所知道最新被提交的索引，通过在发送AppendEntries RPC时带上这个索引，来让其他机器知道
+
+当一个follower得知一个entry被提交之后，它会将这个entry也应用的自己的状态机上
+
+当leader发送AppendEntries时，会带上这个新entry之前一个entry的index和term，如果follower没有在自己的log中发现对应的index和term，它就拒绝这个新entry
+
+Raft处理log不一致的方法是：强制follower腹直leader的log。这意味着follower的日志会被leader的日志覆盖
+
+为了让follower的日志和leader保持一致，leader需要找到它和该follower不一致的起点，让follower删去这一点之后的log，然后将leader的日志从这一点补上。这些动作都是在响应AppendEntries过程中完成的。
+
+leader维护着每一个follower的nextIndex，leader从nextIndex位置给对应follower发log entry
+
+新leader将自己所有nextIndex设置为自己最后一个log entry的下一个位置。
+收到拒绝后，leader会把对应nextIndex减一重试，直到两者相同的位置。
+到这个位置时，follower会将所有冲突entry删去，将leader的后续log entry补到自己这边。
+
+Raft不会通过数副本数（保证大多数）来提交以前term的log entry，只有当前term的log entry是通过数副本数来决定是否提交的。
+
+如果一个当前term的log entry被提交，那么这个entry之前的会被间接提交

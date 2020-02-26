@@ -75,3 +75,18 @@ follower如果在election timeout这段时间内没有收到任何消息，它�
 	- 随机化机制也用于选举分裂的情况，candidate在选举开始会重新随机化一个election timeout，直到这个election timeout超时才启动下一轮选举
 
 > 算法设计者们开始时曾打算使用一个ranking系统，rank高的会被优先推选出来当leader，但它还会有一些问题，即使经过调整还是会有一些例外情况，最后结论是随机重试方法更直观，也更容易理解
+
+
+#### 5.4.1 选举限制 （2020-02-06 18:20增补）
+
+Raft的log entry只有一个流向：从leader到follower
+
+只有log包含所有已提交entry的候选人才可能赢得选举
+
+候选人必须联系大多数节点，如果想赢得选举，它自己的已提交entry必须能够在至少一台它联系的节点中全部存在
+
+如果候选者的log是其他大多数节点中最新的，它将保持所有已提交entry。（这句没明白说的目的是啥，什么叫it will hold all the committed entries？什么操作算hold，hold目的是啥，什么是不hold？）
+
+判断两个log新旧的方法：
+- 如果两个log的最后一个entry的term不一样，那么term越大的log越新
+- 如果最后entry的term一致，log越长的越新
