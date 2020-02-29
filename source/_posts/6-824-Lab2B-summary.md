@@ -60,3 +60,8 @@ AppendEntries [1, 1]
 
 我最后处理方法是对log的append操作先进行检查，短的，且再当前log中全都能找到的，不动log数组。
 
+
+
+### 调试
+
+调试全是打`fmt.Printf`，很不容易读，后来在`config.go`里给config加了个`dump`方法，把所有peer的log都打出来，容易看多了。应该早用的。另外把rand的cmd给换成固定顺序的也有利于调试，循环次数多的，减到1次，也能行，就是得多跑几篇触发fail。
