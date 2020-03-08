@@ -1,5 +1,5 @@
 ---
-title: 6.824 Lab2C summary
+title: 6.824 Lab2C 小结
 date: 2020-03-08 21:17:13
 tags:  [分布式, Raft, 6.824]
 ---
