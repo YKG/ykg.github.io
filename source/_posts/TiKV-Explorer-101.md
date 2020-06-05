@@ -25,6 +25,7 @@ tikv-ctl不想自己编译，用tiup ctl下载了所有ctl包，用tiup ctl tikv
 
 调用栈：
 
+```
 tidb-server/main.go::main()
 tidb-server/main.go::runServer()
 server/server.go::Run()
@@ -37,6 +38,7 @@ server/driver_tidb.go::ExecuteStmt()
 session/session.go::ExecuteStmt()
 session/session.go::runStmt()
 executor/adaptor.go::Exec()
+```
 
 追到这个地方，看了里面的实现，好像没有跟TiKV连上，也没看到那个地方是rs结果集是期待的路径。
 今天就先追到这里。
